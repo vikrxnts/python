@@ -1,0 +1,225 @@
+Python.py 
+
+# Chapter 1
+
+python - is a programing language
+
+what is programing language simply when you want to talk  [ means want to run your code ] to a computer use programing language
+
+but here even a computer cant understand the programing language 
+
+So flow is
+
+  code ( python )     ---->>>>>        Translator           ---->>>>>>         Machine // computer
+                                   compiler / Interpreter
+
+Pythin is Interpreter
+
+# ------------------------------------
+
+Python Character Set
+
+• Letters = A to Z, a to z
+• Digits = 0 to 9
+• Special Symbols = + - * / etc.
+• Whitespaces = Blank Space, tab, carriage return, newline, formfeed
+• Other characters = Python can process all ASCIl and Unicode characters as part of data or literals
+
+
+# ------------------------------------
+
+Note -  
+
+String // word always inside  ""
+
+""  = for world
+    = nothing for number
+
+# ------------------------------------    
+
+print("Hello world")      # just print hello
+
+print = is function 
+      =  use case :  Print Only
+
+
+print("Hello my name is vikrant", "i'm working as SRE")
+
+# Print number + Math
+
+print(1)
+print(2)
+
+print(1+2)     OR    print("this is addition = ",1+2)
+
+
+# ------------------------------------
+
+########################
+# Variables 
+########################
+
+Variable_Rules : 
+
+  --  Identifiers can be combination of uppercase and lowercase letters, digits or an underscore(_). So my Variable, variable_1, variable_for_print all are valid python identifiers.
+
+  --  An Identifier can not start with digit. So while variable1 is valid, 1variable is not valid.
+
+  --  We can't use special symbols like !,#,@,%,$ etc in our Identifier.
+
+  --  Identifier can be of any length.
+
+# -- 
+
+string  =  world
+integer =  number
+float   =  decimal value  (like 2.5 or 3.5 )
+boolean =  True / False 
+None    =   ex - a = None
+
+# -- 
+
+keywords - means reserved words in python 
+
+
+means this is data type
+
+print(type(name))      --  to check type of variable
+
+""  = for world
+    = nothing for number
+
+name = "vikrant"
+age = 27
+
+print(name)
+print(age)
+
+print("my name is", name)
+
+print("my name is", name, "and my age is :",age)
+
+a = 3
+b = 3
+
+add = a + b
+
+print(add)
+print(a - b)
+
+########################
+# Types of Operators
+########################
+
+
+An operator is a symbol that performs a certain operation between operands.
+
+   • Arithmetic Operators (* , - ,*, / ,%, **)
+   
+   • Relational / Comparison Operators (==,!= , > , <, ≥= , ≤= )        # it Answer only on True / False 
+   
+   • Assignment Operators  ( = , += , -= , *= , /= , %= , **= )
+       
+         Basic Exp =  a = 5
+                      
+                       
+            so, New variable
+                      a += 5           Ex -   + = 5 so 5+5 10 is answer
+                      a += 10          Ex -   + = 5 so 5+5+1=  = 15 is answer
+
+   • Logical Operators ( not, and , or )        - its work on Boolean Only
+
+   if you want to print(True) its print True but you if say like this print(not True) its print False
+
+Not operator - Work on only one value
+
+    Ex : a = 5
+         b = 5
+       
+         print(not (a == b))
+
+
+And operator - Work on Two Value ( means two value must be true )
+
+   Ex :  a = 5
+         b = 10
+         c = 5
+         d = 5
+
+        print((a == b) and (a ==c))       # If One is False it respond False
+        print((a == b) and (a ==d))       # it check both variable must be true // If not it respond False
+
+
+
+Or Operator - must be any one True then respond True / if both False then respond False
+
+    Ex : a = 5
+         b = 10
+
+        print((a = b) or (a < b))      - Only One is True So it Respond True
+
+Basic Intro
+  
+    -  Arithmetic Operation are for Mathematical operation like sum minus divide and all ( % - for 10/5 =)
+
+
+########################
+# Type Conversion
+########################
+
+type of conversion :  1) Automatical  -   Python do Automatical for use .
+                      2) Casting      -   We have manually do it .
+
+Automatic Conversion - Python do by himself
+
+     a = 5        - integer
+     b = 10.5     - float
+
+     sum = a + b
+     print(type(sum))       # sum type must be float
+
+Casting
+
+     a = "5"           # 5 is inside the  " " so its string not int
+     b = 10.5 
+
+     sum ( a + b)
+     print(sum)          #  Error cant add string in flot
+    
+So change Type
+    
+      a = int("5")
+      b = 10.5
+    
+     sum = a + b
+     print(sum)   
+     
+########################
+#Input form user 
+########################
+
+Get input from user
+
+# Note - Defalut the Input Behaviour 
+          
+       what is you name = vikrant // Or // 27
+       the type of vikrant // 27 is String 
+
+       Ex - < Outout > 
+            tell me your age :23
+                   23
+                  <class 'str'>
+
+
+input("what is your_name")
+
+# store in variable
+
+name = input("what is your name")
+print(name)
+
+# Use the Type Conversion here
+
+
+value = int(input("tell me your age :"))
+valur = float(input("tell you you percentage :"))
