@@ -1,0 +1,88 @@
+# Chapter 2
+
+########################
+# Strings
+########################
+
+
+# Strings = measn basically a words 
+
+# Add Second Line
+
+\n = to second_line
+\t = to tab space
+
+print("this is first_line /n this is second_line")
+
+# Tdd Multiple String ( concatination )
+
+first = vikrant
+last = khandalkar
+
+print(first + last)
+
+# Measure length of string
+
+print(len)
+
+########################
+# String Function
+########################
+
+
+String Functions
+
+str = "I am a coder."
+str.endswith("er.") #returns true if string ends with substr
+str.capitalize() #capitalizes 1st char
+str.replace(old, new)
+
+#replaces all occurrences of old with new
+
+str.find(word) #returns 1st index of 1st occurrence
+str.count("am") #counts the occurrence of substr in string
+
+
+
+###############################
+  #   Condition Statement    #
+###############################
+
+
+if( age > 18):
+    print("you are mature")
+elif( age == 18):
+    print("Come next year")
+else:
+    print("Not Mature")
+
+
+# Nesting    ->    if condition inside a if condition
+ 
+age = int(input("what is your age : "))
+
+if(age >= 18):
+  if(age >= 90):
+      print("Too OLD to Drive")
+  else:
+      print("Can Drive")
+else:
+    print("Can't Drive")
+
+More Advance
+
+# Find the Largest Value
+
+num1 = int(input("First number : "))
+num2 = int(input("Second number : "))
+num3 = int(input("Third number : "))
+
+print( )
+print(num1,num2,num3)
+
+if(num1 > num2 and num1 > num3):
+    print("num1 is greatest")
+elif(num2 > num1 and num2 > num3):
+    print("num2 is greatest")
+else:
+    print("num3 is gratest")
